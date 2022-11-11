@@ -46,10 +46,14 @@ border width height
 #### [表格标题和表头](day02/05表格标题和表头.html)
 caption  tr  th   td
 
-#### [表格结构](day02/05表格结构.html)
+#### [表格结构](day02/06表格结构.html)
 thead  头部
 tbody  主体部分
 tfoot  尾部
+
+#### [表格合并单元格](day02/07表格合并单元格.html)
+rowspan
+colspan
 
 
 
