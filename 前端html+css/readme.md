@@ -112,8 +112,12 @@ label
 #### [字号](day03/07字号.html)
 font-size
 
-#### [字号](day03/07字号.html)
+#### [文字粗细](day03/08文字粗细.html)
+font-weight
+正常   normal   400
+加粗   bold     700
 
+#### [文字粗细](day03/08文字粗细.html)
 
 
 
