@@ -55,8 +55,20 @@ tfoot  尾部
 rowspan
 colspan
 
+#### [表单](day02/08表单.html)
+文本框：<input type="text">
+密码框：<input type="password">
+单选框：<input type="radio">
+多选框:<input type="checkbox">
+上传文件:<input type="file">
 
+#### [表单占位符](day02/09表单占位符.html)
+placeholder
 
+#### [表单单选框](day02/10表单单选框.html)
+radio
 
+#### [表单上传文件](day02/11表单上传文件.html)
+<input type="file" multiple>
 
 
