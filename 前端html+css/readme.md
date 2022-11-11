@@ -117,7 +117,8 @@ font-weight
 正常   normal   400
 加粗   bold     700
 
-#### [文字粗细](day03/08文字粗细.html)
+#### [倾斜](day03/09倾斜.html)
 
 
+#### [倾斜](day03/09倾斜.html)
 
