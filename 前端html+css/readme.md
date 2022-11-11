@@ -118,7 +118,7 @@ font-weight
 加粗   bold     700
 
 #### [倾斜](day03/09倾斜.html)
+italic
 
-
-#### [倾斜](day03/09倾斜.html)
+#### [字体](day03/10字体.html)
 
