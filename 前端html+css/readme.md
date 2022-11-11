@@ -71,4 +71,25 @@ radio
 #### [表单上传文件](day02/11表单上传文件.html)
 <input type="file" multiple>
 
+#### [表单按钮input](day02/12表单按钮input.html)
+input
+<input type="submit" value="免费注册">
+<input type="reset">
+<input type="button" value="普通按钮">
+
+#### [表单按钮](day02/13表单按钮.html)
+button
+
+#### [表单下拉菜单](day02/14表单下拉菜单.html)
+select
+    option
+
+#### [表单文本域](day02/15表单文本域.html)
+textarea
+
+#### [表单label](day02/16表单label.html)
+label
+
+#### [表单label](day02/16表单label.html)
+
 
