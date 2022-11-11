@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-选择器-子代</title>
+</head>
+<body>
+
+<style>
+    /* 空格隔开的是后代, 儿子,孙子,重孙子 */
+    /* div a {
+        color: red;
+    } */
+
+    /* 只想选中儿子a */
+    /* div的儿子a文字颜色是红色 */
+    div>a{
+        color: red;
+    }
+</style>
+
+<div>
+    父级
+    <a href="#">这是div里面的a</a>
+    <p>
+        <a href="$"> 这是div里面p的a</a>
+    </p>
+</div>
+
+</body>
+</html>
