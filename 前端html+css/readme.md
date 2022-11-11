@@ -131,7 +131,12 @@ font-family
 text-indent
 
 #### [水平对齐方式](day03/14-水平对齐方式.html)
+text-align
+#### [文本修饰](day03/15-文本修饰.html)
+text-decoration  
+underline  line-through   overline  none
 
+#### [行高](day03/16-行高.html)
 
 
 
