@@ -137,6 +137,11 @@ text-decoration
 underline  line-through   overline  none
 
 #### [行高](day03/16-行高.html)
+line-height
 
+#### [内容垂直居中](day03/17-内容垂直居中.html)
+文字是单行的   垂直居中技巧: 设置行高属性值 = 自身高度属性值 
+
+#### [拓展-标签水平居中](day03/18-拓展-标签水平居中.html)
 
 
