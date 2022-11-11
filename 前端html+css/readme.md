@@ -43,7 +43,13 @@ dl dt dd
 table  tr  td
 border width height
 
+#### [表格标题和表头](day02/05表格标题和表头.html)
+caption  tr  th   td
 
+#### [表格结构](day02/05表格结构.html)
+thead  头部
+tbody  主体部分
+tfoot  尾部
 
 
 
