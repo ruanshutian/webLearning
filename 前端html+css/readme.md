@@ -95,4 +95,7 @@ label
 
 #### [字符实体](day02/19字符实体.html)
 
+#### [css引入方式](day03/02css引入方式.html)
+<link rel="stylesheet" href="my.css">
+
 
