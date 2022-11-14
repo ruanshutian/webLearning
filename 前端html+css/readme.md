@@ -162,11 +162,12 @@ h1{}
 a:hover{
 
 #### [07-背景-背景色](day04/07-背景-背景色.html)
-
+background-color
 
 #### [08-背景-背景图](day04/08-背景-背景图.html)
+background-image
 
-
+#### [09-背景-背景平铺](day04/09-背景-背景平铺.html)
 
 
 
