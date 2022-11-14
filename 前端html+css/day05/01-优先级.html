@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #box{
+        color: orange;
+    }
+    .box{
+        color: blue;
+    }
+    div{
+        color: green;
+    }
+
+    /* !important不要给继承的添加, 自己有样式无法继承父级样式 */
+    /*div {*/
+    /*    color: green !important;*/
+    /*}*/
+
+    body{color: red}
+</style>
+<body>
+
+<div class="box" id="box" style="color: pink">测试优先级</div>
+
+<div class="box" id="box" style="...">测试优先级</div>
+
+<div class="box" style="...">测试优先级</div>
+
+<div style="...">测试优先级</div>
+
+测试优先级
+
+</body>
+</html>
