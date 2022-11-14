@@ -168,7 +168,9 @@ background-color
 background-image
 
 #### [09-背景-背景平铺](day04/09-背景-背景平铺.html)
+background-repeat: repeat,no-repeat,repeat-x,repeat-y
 
+#### [10-背景-背景位置](day04/10-背景-背景位置.html)
 
 
 
