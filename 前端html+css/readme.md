@@ -172,9 +172,9 @@ background-repeat: repeat,no-repeat,repeat-x,repeat-y
 
 #### [10-背景-背景位置](day04/10-背景-背景位置.html)
 background-position
-
 #### [11-背景-复合属性](day04/11-背景-复合属性.html)
 
+#### [12-显示模式-块](day04/12-显示模式-块.html)
 
 
 
