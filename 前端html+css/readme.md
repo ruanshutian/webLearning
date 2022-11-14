@@ -175,9 +175,9 @@ background-position
 #### [11-背景-复合属性](day04/11-背景-复合属性.html)
 
 #### [12-显示模式-块](day04/12-显示模式-块.html)
-display:inline-block;
-inline
-
+display:block;
 #### [13-显示模式-行内](day04/13-显示模式-行内.html)
-
+display:inline
+#### [14-显示模式-行内块](day04/14-显示模式-行内块.html)
+display:inline-block;
 
