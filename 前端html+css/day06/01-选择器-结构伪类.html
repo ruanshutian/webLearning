@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-选择器-结构伪类</title>
+</head>
+<style>
+    li:first-child{
+        background-color: red;
+    }
+
+    li:last-child{
+        background-color: blue;
+    }
+
+    li:nth-child(4){
+        background-color: yellow;
+    }
+
+    li:nth-last-child(2){
+        background-color: green;
+    }
+    li:nth-child(2n){
+        background-color: yellow;
+    }
+    li:nth-child(2n+1){
+        background-color: red;
+    }
+    li:nth-child(-n+3){
+        background-color: black;
+    }
+
+</style>
+<body>
+
+<ul>
+    <li>this is 1 li </li>
+    <li>this is 2 li </li>
+    <li>this is 3 li </li>
+    <li>this is 4 li </li>
+    <li>this is 5 li </li>
+    <li>this is 6 li </li>
+    <li>this is 7 li </li>
+    <li>this is 8 li </li>
+    <li>this is 9 li </li>
+</ul>
+<div>
+    <ol>
+        <li>this is ol:li 1</li>
+        <li>this is ol:li 2</li>
+        <li>this is ol:li 3</li>
+        <li>this is ol:li 4</li>
+        <li>this is ol:li 5</li>
+        <li>this is ol:li 6</li>
+        <li>this is ol:li 7</li>
+        <li>this is ol:li 8</li>
+        <li>this is ol:li 9</li>
+        <li>this is ol:li 10</li>
+    </ol>
+</div>
+
+</body>
+</html>
