@@ -223,6 +223,8 @@ display:inline-block;
 #### [12-清除浮动-额外标签法](day06/12-清除浮动-额外标签法.html)
 
 #### [15-清除浮动-overflow](day06/15-清除浮动-overflow.html)
+overflow: hidden;
+
 
 
 
