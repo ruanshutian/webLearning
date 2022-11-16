@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>04-选择器-伪元素</title>
 </head>
+<style>
+    .father{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+    }
+    .father::before{
+        content: 'before';/* 内容 */
+        /* content属性必须添加, 否则伪元素不生效 */
+
+        color: green;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        display: inline-block;
+
+    }
+    .father::after{
+        content: '大米';
+    }
+</style>
 <body>
+dfsdfsdfs
+<div class="father">ai </div>
 
 </body>
 </html>
