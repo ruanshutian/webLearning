@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-H5新增获取元素方式</title>
+</head>
+<body>
+
+<div class="box">盒子1</div>
+<div class="box">盒子2</div>
+<div id="nav">
+    <ul>
+        <li>首页</li>
+        <li>产品</li>
+    </ul>
+</div>
+
+<script>
+    let boxs =document.getElementsByClassName("box");
+    console.log(boxs);
+
+    let firstBox = document.querySelector(".box");
+    console.log(firstBox)
+
+    let nav = document.querySelector("#nav");
+    console.log(nav);
+
+    let li = document.querySelector("li");
+    console.log(li);
+
+    let allBox = document.querySelectorAll(".box");
+    console.log(allBox)
+
+    let lis = document.querySelectorAll('li');
+    console.log(lis);
+
+</script>
+
+</body>
+</html>
