@@ -15,7 +15,9 @@ doucumnet.body  // 返回body元素对象
 #### [06-执行事件步骤](DOM/day01/06-执行事件步骤.html)
 
 
-#### [01-getElementById获取元素](DOM/day01/01-getElementById获取元素.html)
+#### [07-操作元素之改变元素内容](DOM/day01/07-操作元素之改变元素内容.html)
+
+
 #### [01-getElementById获取元素](DOM/day01/01-getElementById获取元素.html)
 #### [01-getElementById获取元素](DOM/day01/01-getElementById获取元素.html)
 
