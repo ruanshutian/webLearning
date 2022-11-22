@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-操作元素之修改元素属性</title>
+</head>
+<style>
+    img {
+        width: 300px;
+    }
+</style>
+<body>
+<button id="ldh">刘德华</button>
+<button id="zxy" >张学友</button>
+<img src="../images/ldh.jpg" alt="" title="刘德华">
+
+<script>
+    let ldh =document.getElementById("ldh");
+    let zxy =document.getElementById('zxy');
+    let img =document.querySelector('img');
+
+    zxy.onclick =()=>{
+        img.src ="../images/zxy.jpg";
+    }
+    ldh.onclick=()=>{
+        img.src="../images/ldh.jpg";
+    }
+
+
+</script>
+</body>
+</html>

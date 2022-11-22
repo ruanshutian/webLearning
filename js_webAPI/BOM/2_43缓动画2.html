@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .father{
+        position: absolute;
+        background-color: blueviolet;
+        width: 200px;
+        height: 200px;
+        margin: 200px;
+    }
+    .son{
+        width: 100px;
+        height: 100px;
+        background-color: #333333;
+        margin: 45px;
+    }
+    .action{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /*padding: 10px;*/
+        /*border: 20px solid blue;*/
+        /*overflow: auto;*/
+        margin-left: 100px;
+    }
+</style>
+<body>
+<script>
+
+    window.addEventListener('load',()=>{
+
+        let animate = (obj,target)=>{
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function (){
+                let d = (target - obj.offsetLeft )/10;
+                d = d>0?Math.ceil(d):Math.floor(d);
+                if(obj.offsetLeft>=target){
+                    clearInterval(obj.timer);
+                }
+                obj.style.left = obj.offsetLeft + d + 'px';
+                console.log(obj.offsetLeft)
+                console.log(d);
+                console.log(obj.style.left);
+            },30);
+
+        };
+        // let btns = document.querySelectorAll('button');
+        // btns[1].addEventListener('click',()=>{
+        //     let action = document.querySelector('.action');
+        //     animate(action,800);
+        // });
+        // btns[0].addEventListener('click',()=>{
+        //     let father =document.querySelector('.father');
+        //     animate(father,800);
+        // });
+        let btn500 = document.querySelector('.b500');
+
+        let btn800= document.querySelector('.b800');
+
+
+        btn500.addEventListener('click',()=>{
+                let action = document.querySelector('.action');
+                animate(action,500);
+        });
+        btn800.addEventListener('click',()=>{
+            let action = document.querySelector('.action');
+            animate(action,800);
+        });
+
+    });
+</script>
+<div class="father">
+
+    <div class="son">
+
+    </div>
+
+</div>
+<div class="action">
+
+</div>
+<div>
+    <button class="b500">click</button>
+    <button class="b800">click</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .father{
+        position: absolute;
+        background-color: blueviolet;
+        width: 200px;
+        height: 200px;
+        margin: 150px;
+    }
+    .son{
+        width: 100px;
+        height: 100px;
+        background-color: #333333;
+        margin: 45px;
+    }
+    .action{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        padding: 10px;
+        border: 20px solid blue;
+        overflow: auto;
+    }
+</style>
+<body>
+<script>
+
+    window.addEventListener('load',()=>{
+        let animate = (obj,target)=>{
+            let acting = ()=>{
+                if(obj.offsetLeft>=target){
+                    clearInterval(timer);
+                }
+                obj.style.left = obj.offsetLeft +5 +'px';
+            };
+            let timer = setInterval(acting,300);
+        };
+        let action = document.querySelector('.action');
+        animate(action,400);
+
+        let father =document.querySelector('.father');
+        animate(father,500);
+
+    });
+</script>
+<div class="father">
+
+    <div class="son">
+
+    </div>
+
+</div>
+<div class="action">
+
+</div>
+
+</body>
+</html>

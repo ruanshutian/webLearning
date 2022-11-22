@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div{
+        background-color: #1eacda;
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<body>
+<script>
+        window.addEventListener('load',()=>{
+            console.log(location);
+
+            let btn =document.querySelector('button');
+            btn.addEventListener('click',()=>{
+                //assign跳转  可以后退
+                // location.assign('http://ww.baidu.com');
+                //replace 不记录浏览历史，不可以后退
+                location.replace('http://ww.baidu.com');
+
+                // location.reload();
+
+            })
+
+        })
+</script>
+<button>
+    click
+</button>
+<div>
+
+</div>
+</body>
+</html>
