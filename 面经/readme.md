@@ -8,11 +8,8 @@ js中的原始值包括了null , undefined , boolean , Number , String
 
 引用值类型则是对象Object.Array，Function,Data,RegExp,Error都是特殊的Object对象
 
-原始值从设计上来说是不可改变的，试想你不可能去改变一个数字本身的含义。所以他们只有值相等的时候才会相等。
-String类型特殊一点。他可以看起来像是一个Array（当然他并不是），他的比较方式是先比较长度，在比较每一个位置上的值，只有都相等的时候才算相等。
-所以string类型本身自带的所有方法都是不会改变原字符串的
-
-
+### [eg](1-1原始值和引用值类型及区别.js)
+### [helo](https://juejin.cn/post/6844904023967924231)
 
 2. 判断数据类型typeof、instanceof、Object.prototype.toString.call()、constructor
 
@@ -35,6 +32,8 @@ String类型特殊一点。他可以看起来像是一个Array（当然他并不
 11. 继承的实现方式及比较
 
 12. 深拷贝与浅拷贝
+### [eg](1-12深拷贝与浅拷贝.js)
+### [help](https://juejin.cn/post/7072528644739956773)
 
 13. 防抖和节流
 
