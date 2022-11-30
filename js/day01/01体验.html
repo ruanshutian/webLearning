@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .pink{
+        background-color: pink;
+    }
+</style>
+<body>
+<button class="pink">按钮</button>
+<button>按钮</button>
+<button>按钮</button>
+<button>按钮</button>
+<script>
+    let btns = document.querySelectorAll("button");
+    for(let i=0;i<btns.length;i++){
+        btns[i].addEventListener("click",function (){
+            document.querySelector('.pink').className="";
+            this.className = "pink";
+        })
+    }
+
+</script>
+
+</body>
+</html>
