@@ -19,6 +19,8 @@ js中的原始值包括了null , undefined , boolean , Number , String
 
 5. bind、call、apply的区别
 
+### [help](https://juejin.cn/post/7075603057924374541)
+
 6. new的原理
 
 7. 如何正确判断this？
