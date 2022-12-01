@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addEventListener和onClick()的区别</title>
+</head>
+<body>
+
+<button id="btn">
+    click
+</button>
+
+
+</body>
+<script>
+    /*
+    addEventListener 它接受三个参数，第一个参数是要注册处理程序的类型，但他不包括设置事件处理程序属性的前缀on，
+    第二个参数是事件发生时所调用的函数，第三个默认为false，如果为true，那么将注册为捕获事件处理程序。
+
+    onclick            => 两个onclick后面一个会覆盖前面一个
+    addEventListener   => 注册处理程序都会按照注册的顺序调用。
+
+     */
+    let btn=document.getElementById("btn");
+
+    btn.onclick = ()=>{
+        console.log("onclick");
+    }
+    btn.onclick =()=>{
+        console.log("onclick222");
+    }
+
+    btn.addEventListener("click",()=>{
+        console.log("addEventListener true");
+    },true);
+    btn.addEventListener("click",()=>{
+        console.log("addEventListener false");
+    },false);
+
+</script>
+</html>

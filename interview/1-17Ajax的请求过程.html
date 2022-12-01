@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <button id="ajax">发送ajax请求</button>
+    <a href="index.html"></a>
+    <div id="ajaxResult"></div>
+</div>
+</body>
+<script>
+    /*
+    1.建立XMLHttpRequest对象;
+    2.设置回调函数;
+    3.配置请求信息，(如open,get方法)，使用open方法与服务器建立链接;
+    4.向服务器发送数据;
+    5.在回调函数中针对不同的响应状态进行处理;
+     */
+    let btn = document.getElementById('ajax');
+
+    btn.addEventListener("click",()=>{
+        let request;
+        if(window.XMLHttpRequest){
+            request=new XMLHttpRequest();
+        }else {
+            request =new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        let url ="index.html";
+        request.open("get",url)
+
+        request.send(null);
+
+        request.onreadystatechange = callback;
+
+        function callback(){
+            if(request.readyState ==4){
+                // console.log("success");
+                if(request.status==200){
+                    let res =request.responseText;
+                    // res=JSON.parse(res);
+                    console.log(res)
+                    document.getElementById("ajaxResult").innerHTML = res;
+                }
+            }
+        }
+    })
+
+
+
+</script>
+</html>

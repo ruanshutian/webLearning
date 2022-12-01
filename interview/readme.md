@@ -14,9 +14,10 @@ js中的原始值包括了null , undefined , boolean , Number , String
 2. 判断数据类型typeof、instanceof、Object.prototype.toString.call()、constructor
 
 3. 类数组与数组的区别与转换
-
+[区别](https://juejin.cn/post/6844903927175970829)
+[转换](https://juejin.cn/post/6844903631859220493)
 4. 数组的常见API
-
+[api](https://juejin.cn/post/7008081968805969950)
 5. bind、call、apply的区别
 
 ### [help](https://juejin.cn/post/7075603057924374541)
@@ -26,8 +27,12 @@ js中的原始值包括了null , undefined , boolean , Number , String
 7. 如何正确判断this？
 
 8. 闭包及其作用
-
-9. 原型和原型链
+   [help](https://juejin.cn/post/6964579731387711501)
+闭包（closure）是一个函数以及其捆绑的周边环境状态（lexical environment，词法环境）的引用的组合。
+换而言之，闭包让开发者可以从内部函数访问外部函数的作用域。在 JavaScript 中，闭包会随着函数的创建而被同时创建。
+   [闭包](https://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)
+[How JavaScript works: memory management + how to handle 4 common memory leaks](https://blog.sessionstack.com/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks-3f28b94cfbec)
+11. 原型和原型链
 
 10. prototype与__proto__的关系与区别
 
@@ -46,13 +51,18 @@ js中的原始值包括了null , undefined , boolean , Number , String
 16. Array.sort()方法与实现机制
 
 17. Ajax的请求过程
+    1.建立XMLHttpRequest对象;
+    2.设置回调函数;
+    3.配置请求信息，(如open,get方法)，使用open方法与服务器建立链接;
+    4.向服务器发送数据;
+    5.在回调函数中针对不同的响应状态进行处理;
 
 18. JS的垃圾回收机制
 
 19. JS中的String、Array和Math方法
 
 20. addEventListener和onClick()的区别
-
+    [addEventListener和onClick](https://juejin.cn/post/6844904024039227406)
 21. new和Object.create的区别
 
 22. DOM的location对象

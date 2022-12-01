@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="cache-button">cache</button>
+    <button id="clear-button">clear</button>
+</body>
+<script>
+    function cacheFactory() {
+        let cacheData = {}
+
+        function cache(key, value) {
+            if(cacheData.hasOwnProperty(key)) {
+                return cacheData[key]
+            } else {
+                cacheData[key] = value;
+            }
+        }
+
+        function cacheStatic() {
+            return cacheData;
+        }
+
+        return {
+            cache,
+            cacheStatic
+        }
+    }
+    let { cache, cacheStatic } = cacheFactory();
+    let cacheHandler;
+    document.getElementById('cache-button').addEventListener('click', (cacheHandler = () => {
+        cache(Math.random().toString(36), Math.random().toString(36).repeat(102400))
+    }))
+
+    document.getElementById('clear-button').addEventListener('click', () => {
+        document.getElementById('cache-button').removeEventListener('click', cacheHandler)
+        cacheStatic = null;
+        cache = null;
+        // cacheHandler = null;
+        // cacheFactory = null;
+    })
+</script>
+</html>
