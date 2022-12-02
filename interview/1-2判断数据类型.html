@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    var num = 123;
+    var str = 'abcdef';
+    var bool = true;
+    var arr = [1, 2, 3, 4];
+    var obj = {name:'wenzi', age:25};
+    var func = function(){ console.log('this is function'); }
+    var und = undefined;
+    var nul = null;
+    var date = new Date();
+    var reg = /^[a-zA-Z]{5,20}$/;
+    var error= new Error();
+
+    //typeof
+    console.log(typeof num);
+    console.log(typeof str);
+    console.log(typeof bool);
+    console.log(typeof arr);
+    console.log(typeof obj);
+    console.log(typeof func);
+    console.log(typeof und);
+    console.log(typeof nul);
+    console.log(typeof date);
+    console.log(typeof reg);
+    console.log(typeof error);
+
+    //instanceof
+    let a = num instanceof Number// false
+    console.log(a)
+    a = str instanceof String// false
+    console.log(a)
+    a = bool instanceof Boolean  // false
+    console.log(a)
+    a = arr instanceof Array // true--注意
+    console.log(a)
+    a = arr instanceof Object // true--注意
+    console.log(a)
+    a = obj instanceof Object  // true--注意
+    console.log(a)
+    a = func instanceof Function  // true
+    console.log(a)
+    a = und instanceof Object // false
+    console.log(a)
+    a = nul instanceof Object // false
+    console.log(a)
+    a = date instanceof Date  // true
+    console.log(a)
+    a = reg instanceof RegExp // true
+    console.log(a)
+    a = error instanceof Error // true
+    console.log(a)
+
+    a = Object.prototype.toString.call(num),  // '[object Number]'
+    console.log(a)
+    a=    Object.prototype.toString.call(str),  // '[object String]'
+        console.log(a)
+    a=    Object.prototype.toString.call(bool),  // '[object Boolean]'
+        console.log(a)
+    a=    Object.prototype.toString.call(arr),  // '[object Array]'
+        console.log(a)
+    a=   Object.prototype.toString.call(obj),  // '[object Object]'
+        console.log(a)
+    a=  Object.prototype.toString.call(func),  // '[object Function]'
+        console.log(a)
+    a=  Object.prototype.toString.call(und),  // '[object Undefined]'
+        console.log(a)
+    a= Object.prototype.toString.call(nul),  // '[object Null]'
+        console.log(a)
+    a= Object.prototype.toString.call(date),  // '[object Date]'
+        console.log(a)
+    a= Object.prototype.toString.call(reg),  // '[object RegExp]'
+        console.log(a)
+    a= Object.prototype.toString.call(error)  // '[object Error]'
+    console.log(a)
+
+
+
+
+
+</script>
+</html>
